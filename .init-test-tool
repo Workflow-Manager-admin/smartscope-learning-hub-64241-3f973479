@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/smartscope-learning-hub-64241-3f973479/smartscope_learning_hub"
+}
