@@ -7,10 +7,11 @@ function App() {
       <nav className="navbar">
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <div className="logo">
-              <span className="logo-symbol" aria-label="Sparkle" role="img">✦</span> KAVIA AI
+            <div className="logo" style={{ color: '#232323' }}>
+              <span className="logo-symbol" aria-label="Sparkle" role="img">✦</span>
+              Smart Scope
             </div>
-            <button className="btn" style={{ background: 'linear-gradient(90deg, var(--secondary) 10%, var(--accent) 100%)', color: '#292929', fontWeight: 700 }}>
+            <button className="btn" style={{ background: 'linear-gradient(90deg, var(--secondary) 10%, var(--accent) 100%)', color: '#232323', fontWeight: 700 }}>
               Template Button
             </button>
           </div>
@@ -20,10 +21,13 @@ function App() {
       <main>
         <div className="container">
           <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            <h1 className="title">SmartScope Learning Hub</h1>
-            <div className="description">
-              Start building your application with a vibrant, light, and engaging experience! <br /> <span style={{ color: 'var(--accent)', fontWeight: 700 }}>Powered by Kavia AI</span>
+            <div className="subtitle" style={{ color: '#232323' }}>Welcome to</div>
+            <h1 className="title" style={{ WebkitTextFillColor: '#222', color: '#222', background: 'none', textShadow: 'none', fontWeight: 800 }}>
+              Smart Scope
+            </h1>
+            <div className="description" style={{ color: '#232323' }}>
+              Start building your application with a vibrant, light, and engaging experience! <br />
+              <span style={{ color: 'var(--accent)', fontWeight: 700 }}>Powered by Smart Scope</span>
             </div>
             <button className="btn btn-large">Get Started</button>
           </div>
