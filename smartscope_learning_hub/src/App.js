@@ -108,8 +108,8 @@ function App() {
           </section>
         </div>
         {/* Main Feature Areas */}
-        <span id="features" tabIndex={-1} aria-hidden="true" />
-        <MainContainer />
+        {/* <span id="features" tabIndex={-1} aria-hidden="true" /> */}
+        {/* <MainContainer /> */}
       </main>
     </div>
   );
