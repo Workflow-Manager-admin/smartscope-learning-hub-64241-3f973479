@@ -3,6 +3,7 @@ import "./MainContainer.css";
 import Visualization from "./Visualization";
 import AnimatedCartoon from "./AnimatedCartoon";
 import RealTimeData from "./RealTimeData";
+import UserInteraction from "./UserInteraction";
 
 /**
  * PUBLIC_INTERFACE
@@ -27,11 +28,7 @@ function MainContainer() {
       </div>
       <div className="feature-section user-interactive">
         <h2 className="feature-title">User Interactive Tools</h2>
-        <div className="feature-placeholder">
-          {/* Placeholder for user interactive tools */}
-          <span role="img" aria-label="Puzzle Piece" className="icon-large">🧩</span>
-          <p>Hands-on interactive features are in development.</p>
-        </div>
+        <UserInteraction />
       </div>
     </section>
   );
