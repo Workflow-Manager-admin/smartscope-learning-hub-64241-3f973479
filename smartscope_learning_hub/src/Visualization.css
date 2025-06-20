@@ -1,0 +1,118 @@
+.viz-root {
+  width: 100%;
+  min-width: 260px;
+  max-width: 420px;
+  background: linear-gradient(109deg, #fff8f2 80%, #fff2fa 100%);
+  border-radius: 16px;
+  border: 2.5px solid var(--primary, #ff7f50);
+  box-shadow: 0 4px 22px 0 #ffd70018, 0 0.5px 2.5px 0 #ff69b480;
+  padding: 18px 14px 12px 14px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.viz-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.09rem;
+  font-weight: 800;
+  color: var(--primary, #ff7f50);
+  margin-bottom: 5px;
+}
+
+.icon-viz {
+  font-size: 1.5em;
+  color: var(--accent, #ff69b4);
+  text-shadow: 0px 2px 5px #ffe6f7;
+}
+
+.viz-title {
+  flex: 1;
+  padding-left: 5px;
+  letter-spacing: 0.02em;
+  background: linear-gradient(92deg, var(--primary), var(--accent) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.viz-refresh {
+  background: none;
+  border: none;
+  color: var(--secondary, #ffd700);
+  font-size: 1.38em;
+  cursor: pointer;
+  transition: color 0.22s;
+  margin-left: 8px;
+  filter: drop-shadow(0 1.5px 4px var(--secondary, #ffd700));
+}
+.viz-refresh:hover,
+.viz-refresh:focus {
+  color: var(--accent, #ff69b4);
+  outline: none;
+}
+
+.viz-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  background: none;
+}
+
+.viz-axis {
+  stroke: #e9d0c1;
+  stroke-width: 2.1;
+}
+
+/* Bars have rounded top edges for vivid, approachable look */
+.viz-bar {
+  rx: 7.5;
+  opacity: 0.9;
+  transition: 
+    height 0.68s cubic-bezier(.5,1.6,.5,1),
+    fill 0.32s,
+    filter 0.21s;
+  filter: drop-shadow(0 1.5px 7px #ffd70080);
+}
+.viz-bar-group:hover .viz-bar, 
+.viz-bar-group.active .viz-bar {
+  opacity: 1;
+  filter: drop-shadow(0 0 18px var(--accent, #ff69b4));
+  outline: 2.5px solid var(--accent, #ff69b4);
+}
+
+.viz-label {
+  fill: var(--primary, #ff7f50);
+  opacity: 0.68;
+  pointer-events: none;
+  font-weight: 700;
+}
+
+.viz-value {
+  fill: var(--accent, #ff69b4);
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.viz-instruction {
+  font-size: 0.98rem;
+  color: var(--text-secondary, #232323cc);
+  text-align: center;
+  margin-top: 9px;
+  opacity: 0.82;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 530px) {
+  .viz-root {
+    padding: 9px 1px 5px 2.5px;
+    min-width: 0;
+    max-width: 98vw;
+  }
+  .viz-title { font-size: 1.01rem; }
+  .viz-instruction { font-size: 0.92rem; }
+}

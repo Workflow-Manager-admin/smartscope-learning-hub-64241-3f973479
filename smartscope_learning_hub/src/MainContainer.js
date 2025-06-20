@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainContainer.css";
+import Visualization from "./Visualization";
 
 /**
  * PUBLIC_INTERFACE
@@ -11,11 +12,8 @@ function MainContainer() {
     <section className="main-container">
       <div className="feature-section visualizations">
         <h2 className="feature-title">Interactive Visualizations</h2>
-        <div className="feature-placeholder">
-          {/* Placeholder for future interactive visualizations */}
-          <span role="img" aria-label="Chart Icon" className="icon-large">📊</span>
-          <p>Dynamic graphs and visual tools coming soon.</p>
-        </div>
+        {/* Integrate the dynamic visualization demo here */}
+        <Visualization />
       </div>
       <div className="feature-section cartoons">
         <h2 className="feature-title">Animated Cartoons</h2>
