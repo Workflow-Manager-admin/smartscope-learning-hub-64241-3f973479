@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainContainer.css";
 import Visualization from "./Visualization";
+import AnimatedCartoon from "./AnimatedCartoon";
 
 /**
  * PUBLIC_INTERFACE
@@ -17,11 +18,7 @@ function MainContainer() {
       </div>
       <div className="feature-section cartoons">
         <h2 className="feature-title">Animated Cartoons</h2>
-        <div className="feature-placeholder">
-          {/* Placeholder for animated cartoons */}
-          <span role="img" aria-label="Cartoon Icon" className="icon-large">🎬</span>
-          <p>Engaging educational cartoons on the way.</p>
-        </div>
+        <AnimatedCartoon />
       </div>
       <div className="feature-section realtime">
         <h2 className="feature-title">Real-time Data Views</h2>
