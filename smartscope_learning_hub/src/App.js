@@ -47,6 +47,8 @@ function App() {
                 border: 'none',
                 boxShadow: '0px 2px 16px 0 #ffd70011, 0 1.5px 2.5px 0 #ff69b43c'
               }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Explore Features
             </a>
