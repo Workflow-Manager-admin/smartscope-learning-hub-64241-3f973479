@@ -2,6 +2,7 @@ import React from "react";
 import "./MainContainer.css";
 import Visualization from "./Visualization";
 import AnimatedCartoon from "./AnimatedCartoon";
+import RealTimeData from "./RealTimeData";
 
 /**
  * PUBLIC_INTERFACE
@@ -22,11 +23,7 @@ function MainContainer() {
       </div>
       <div className="feature-section realtime">
         <h2 className="feature-title">Real-time Data Views</h2>
-        <div className="feature-placeholder">
-          {/* Placeholder for real-time data integration */}
-          <span role="img" aria-label="Live Data" className="icon-large">⏱️</span>
-          <p>Live data displays and feeds coming soon.</p>
-        </div>
+        <RealTimeData />
       </div>
       <div className="feature-section user-interactive">
         <h2 className="feature-title">User Interactive Tools</h2>
